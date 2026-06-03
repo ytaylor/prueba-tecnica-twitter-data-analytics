@@ -3,14 +3,9 @@
 ## Introducción
 Esta prueba técnica está diseñada para avalar tus habilidades como Analista de datos, poniendo énfasis en la calidad del código, el nivel de experiencia usando las tecnologías requeridas:
 
+- Visual Studio Code, Python, Power BI/ Tableau y cualquier otra similar.
 
-## Tecnologías requeridas: 
-
-Visual Studio Code, Python, Power BI/ Tableau y cualquier otra similar.
-
-## Prueba técnica
-
-Presenta información sobre un feed de Twitter sobre la COVID-19. Descarga el conjunto de datos sin procesar desde este enlace. El conjunto de datos de Twitter se recopiló a través del flujo de datos e incluye metadatos de tweets de varios idiomas. Puedes realizar cualquier tipo de análisis de este conjunto de datos. El objetivo es generar información útil sobre este tema. Prepara una presentación breve con los resultados de tu análisis. La presentación debe presentar algunas ideas, dirigidas a una audiencia no técnica.
+Presenta información sobre un feed de Twitter sobre la COVID-19. El conjunto de datos de Twitter se recopiló a través del flujo de datos e incluye metadatos de tweets de varios idiomas. Puedes realizar cualquier tipo de análisis de este conjunto de datos. El objetivo es generar información útil sobre este tema. Prepara una presentación breve con los resultados de tu análisis. La presentación debe presentar algunas ideas, dirigidas a una audiencia no técnica.
 
 
 Analiza también algunos detalles técnicos; por ejemplo, cómo preparaste los datos e implementaste el análisis, describe los modelos que utilizaste o tus opciones de configuración.
@@ -58,11 +53,25 @@ El entregable final se estructuró en Tableau aprovechando las capacidades nativ
 * **Interactividad de Filtros:** Se programaron acciones de filtrado cruzado; seleccionar cualquier región del mapa recalculado redefine las métricas de interacción y tipos de dispositivos en tiempo real.
 * **Diseño Ejecutivo:** Se priorizó el uso de tipografías limpias y paletas de colores corporativas coherentes (evitando saturación visual), facilitando la lectura a tomadores de decisiones sin perfil técnico.   
 
+## Echa un vistazo a Tableau: 
 
-## ## 🎯 Conclusiones Generales del Proyecto y Valor de Negocio
+- [https://public.tableau.com/app/profile/yanelis.serrano3420/viz/Twitter-Covid19-Analisis/Dashboard1](https://public.tableau.com/app/profile/yanelis.serrano3420/viz/Twitter-Covid19-Analisis/Dashboard1)
+
+## Conclusiones Generales del Proyecto y Valor de Negocio
 
 El análisis avanzado del feed de Twitter sobre la COVID-19 permitió transformar más de 60,000 registros de datos crudos en tres pilares de conocimiento estratégico para tomadores de decisiones:
 
 1. **Geografía de la Conversación (Dónde):** Tras un exhaustivo proceso de ingeniería de datos para mitigar el caos de texto libre en la ubicación, se identificó un claro duopolio en la conversación digital, liderado por **Estados Unidos** y **España**. Esto permite concentrar los esfuerzos de análisis de sentimiento y campañas mediáticas en zonas geográficas de alto impacto bien delimitadas.
 2. **Patrón Temporal de Consumo (Cuándo):** La actividad en la red demostró un comportamiento cíclico predecible, situando el punto de máxima audiencia a las **18:00 UTC**. Este hallazgo proporciona una métrica accionable para optimizar los tiempos de publicación de información sensible o campañas institucionales.
 3. **Segmentación Tecnológica (Quién):** El análisis cruzado reveló una marcada divergencia cultural en el acceso a la información; mientras el usuario de habla inglesa interactúa predominantemente desde plataformas **Apple iOS**, el usuario de habla hispana lo hace desde **Android**. Esta conclusión obliga a que cualquier estrategia de visualización o despliegue técnico posterior priorice un enfoque responsive enfocado en la experiencia mobile-first.
+- El análisis cuantitativo de la estructura del mensaje (`Tweet Content`) arrojó dos métricas determinantes que transforman la comprensión de la base de datos: un **83.31% de tuits con enlaces (`http`)** y un **81.50% con menciones (`@`)**.
+    - **Cultura de la Verificabilidad:** El abrumador uso de URLs externas indica que la conversación digital sobre la COVID-19 estuvo marcada por una necesidad de legitimación de la información. La audiencia sustituyó la opinión vacía por el uso de fuentes compartidas (artículos, decretos, papers), elevando el rigor del ecosistema analizado.
+    - **Interpelación Colectiva:** El alto índice de menciones demuestra que el feed operó como una red de comunicación dirigida y bidireccional. La masa de usuarios no emitió mensajes al aire; interactuó directamente con clusters de debate, amplificó a líderes sectoriales y fiscalizó activamente a cuentas institucionales mediante el etiquetado directo.
+    - **Valor para el Reporting:** Estas variables permiten descartar el "ruido residual" de la red y segmentar el cuadro de mando en Tableau para enfocarse en la "conversación de valor" (tuits con enlaces que aportaban datos y tuits con menciones que construían redes de debate), optimizando el análisis cualitativo para audiencias directivas.
+
+- La clasificación de la audiencia en base a su volumen de seguidores (`Categoria_Influencia`) cruzada con su rendimiento de difusión (`Retweets Received`) revela la arquitectura de distribución del mensaje durante la crisis:
+    - **Asimetría de la Viralidad:** El análisis confirma que el ecosistema digital se rige por leyes de concentración extrema. Más del 90% de la muestra (Micro-usuarios) genera un impacto cercano a cero interacciones por tuit, mientras que el segmento `"Celebridad / Institución (>50k)"` monopoliza la atención con picos exponenciales de engagement. 
+    - **Focalización del Monitoreo:** Desde una perspectiva de gestión de crisis, este hallazgo demuestra que para auditar corrientes de opinión o frenar alertas sanitarias falsas, el esfuerzo debe centralizarse en la vigilancia de las cuentas de gran envergadura (Outliers), optimizando los recursos de Social Listening.
+    - **Valor de los Canales Intermedios:** El crecimiento sostenido detectado en la categoría `"Micro-Influencer (5k-50k)"` identifica a estos usuarios como los verdaderos puentes de transmisión y validación local de la información técnica, convirtiéndolos en aliados estratégicos para la difusión de campañas corporativas o gubernamentales.
+
+
